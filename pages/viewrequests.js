@@ -15,7 +15,6 @@ export const getServerSideProps = async () => {
 
     console.log('FETCHING DOCUMENTS');
     const requests = await Request.find();
-    requests.order({column: '_id'}, {options: {ascending: false}})
     console.log('FETCHED DOCUMENTS');
 
     return {
