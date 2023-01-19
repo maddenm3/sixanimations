@@ -2,10 +2,9 @@ import Link from 'next/link'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
-import images from './images'
 
-
-export default function portfolio(){
+export default function portfolio(props){
+    const images = props.images
     return(
         <div>
             <Head>
@@ -29,7 +28,7 @@ export default function portfolio(){
                 </div>
             </div>
             <div className={styles.container}>
-                {images.images.map(i=>(
+                {images.map(i=>(
                     
                         <div key={i.id}>
                             <Image 
@@ -55,4 +54,17 @@ export default function portfolio(){
             
       </div>
     )
+}
+
+// Fetching data from the JSON file
+import fsPromises from 'fs/promises';
+import path from 'path'
+export async function getStaticProps() {
+  const filePath = path.join(process.cwd(), 'images.json');
+  const jsonData = await fsPromises.readFile(filePath);
+  const objectData = JSON.parse(jsonData);
+
+  return {
+    props: objectData
+  }
 }
