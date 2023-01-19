@@ -19,7 +19,9 @@ export default function About(){
             {gtag('js', new Date())}
             {gtag('config', 'G-R0TYQHP3W5')}
             </script> */}
-            <title>About</title>
+            <title>About Us</title>
+            <meta name="description" content="Six Animations is a professional CGI and 3D animated studio based in Shenzhen." />
+
         </Head>
         <main className={styles.page}>
 

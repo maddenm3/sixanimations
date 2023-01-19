@@ -9,6 +9,8 @@ export default function portfolio(props){
         <div>
             <Head>
                 <title>Our Work</title>
+                <meta name="description" content="View a snapshot of our 3D videos and photos here." />
+
             </Head>
             <div className={styles.portfolio}>
               <div className={styles.sticky}>

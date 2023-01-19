@@ -30,7 +30,9 @@ export default function Request(){
     return(
         <>
             <Head>
-                <title>Request</title>
+                <title>Submit a Request</title>
+                <meta name="description" content="Submit a 3D animation request here." />
+
             </Head>
             <main className={styles.page}>
                 <div className={styles.description}>

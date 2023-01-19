@@ -12,6 +12,8 @@ export default function Services(){
         <>
             <Head>
                 <title>Services</title>
+                <meta name="description" content="We offer 3D animated video and photo services." />
+
             </Head>
             <main className={styles.page}>
 
