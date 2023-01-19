@@ -21,5 +21,7 @@ export default async function addRequest(req, res) {
   } catch (error) {
     console.log(error);
     res.json({ error });
+    res.redirect('/');
+
   }
 }
