@@ -19,7 +19,14 @@ export default function Home({ requests }) {
       </Head>
       <div className={styles.main}>
         <nav className={styles.nav}>
+        <Image className={styles.icon}
+            src='/icon3.svg'
+            height='70'
+            width='70'
+
+            />
           <div className={styles.logo}>
+            
             <Image
               src='/logo2.svg'
               layout='fill'

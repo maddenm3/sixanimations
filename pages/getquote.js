@@ -18,6 +18,14 @@ export default function Request(){
             </Head>
             <div className={styles.main}>
                 <nav className={styles.nav}>
+                    <Link href='/' className={styles.icon}>
+                        <Image
+                            src='/icon3.svg'
+                            height='70'
+                            width='70'
+
+                            />
+                    </Link>
                     <Link href='/' className={styles.logo}>
                         <Image
                         src='/logo2.svg'

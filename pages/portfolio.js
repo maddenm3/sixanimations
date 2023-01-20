@@ -17,6 +17,14 @@ export default function portfolio(){
             </Head>
             <div className={styles.main}>
                 <nav className={styles.nav}>
+                <Link href='/' className={styles.icon}>
+                        <Image
+                            src='/icon3.svg'
+                            height='70'
+                            width='70'
+
+                            />
+                    </Link>
                     <Link href='/' className={styles.logo}>
                         <Image
                         src='/logo2.svg'
@@ -52,12 +60,14 @@ export default function portfolio(){
                         layout='fill'
                         className={styles.screenshot}
                         alt="cars"
+                        objectFit='contain'
                     />
                 </div>
                 <div className={styles.container}>
                     <Image 
                         src='/photos/charging.png'
                         layout='fill'
+                        objectFit='contain'
 
                         className={styles.screenshot}
                         alt="charging"
@@ -68,6 +78,7 @@ export default function portfolio(){
                 <Image 
                     src='/photos/chips.png'
                     layout='fill'
+                    objectFit='contain'
 
                     className={styles.screenshot}
                     alt="chips"
@@ -77,6 +88,7 @@ export default function portfolio(){
                 <Image 
                     src='/photos/earth.png'
                     layout='fill'
+                    objectFit='contain'
 
                     className={styles.screenshot}
                     alt="earth"
@@ -87,6 +99,7 @@ export default function portfolio(){
                 <Image 
                     src='/photos/home.png'
                     layout='fill'
+                    objectFit='contain'
 
                     className={styles.screenshot}
                     alt="home"
@@ -97,6 +110,7 @@ export default function portfolio(){
                 <Image 
                     src='/photos/internalcomponents.png'
                     layout='fill'
+                    objectFit='contain'
 
                     className={styles.screenshot}
                     alt="components"
@@ -107,6 +121,7 @@ export default function portfolio(){
                 <Image 
                     src='/photos/keys.png'
                     layout='fill'
+                    objectFit='contain'
 
                     className={styles.screenshot}
                     alt="keys"
@@ -117,6 +132,7 @@ export default function portfolio(){
                 <Image 
                     src='/photos/kitchen.png'
                     layout='fill'
+                    objectFit='contain'
 
                     className={styles.screenshot}
                     alt="kitchen"
@@ -127,6 +143,7 @@ export default function portfolio(){
                 <Image 
                     src='/photos/mechanism.png'
                     layout='fill'
+                    objectFit='contain'
 
                     className={styles.screenshot}
                     alt="mechanism"
@@ -137,6 +154,7 @@ export default function portfolio(){
                 <Image 
                     src='/photos/powershare.png'
                     layout='fill'
+                    objectFit='contain'
 
                     className={styles.screenshot}
                     alt="power"
@@ -147,6 +165,7 @@ export default function portfolio(){
                 <Image 
                     src='/photos/space.png'
                     layout='fill'
+                    objectFit='contain'
 
                     className={styles.screenshot}
                     alt="space"
@@ -156,6 +175,7 @@ export default function portfolio(){
                 <Image 
                     src='/photos/sportmodes.png'
                     layout='fill'
+                    objectFit='contain'
 
                     className={styles.screenshot}
                     alt="sports"
@@ -166,6 +186,7 @@ export default function portfolio(){
                 <Image 
                     src='/photos/stepinside.png'
                     layout='fill'
+                    objectFit='contain'
 
                     className={styles.screenshot}
                     alt="step"
@@ -176,6 +197,7 @@ export default function portfolio(){
                 <Image 
                     src='/photos/sunrise.png'
                     layout='fill'
+                    objectFit='contain'
 
                     className={styles.screenshot}
                     alt="sunrise"
