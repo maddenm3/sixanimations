@@ -1,171 +1,207 @@
 import Link from 'next/link'
 import Head from 'next/head'
 import Image from 'next/image'
+import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 
+const inter = Inter({ subsets: ['latin'] })
 export default function portfolio(){
     
     return(
-        <div>
+        <>
             <Head>
                 <title>Our Work</title>
                 <meta name="description" content="View a snapshot of our 3D videos and photos here." />
 
             </Head>
-            <div className={styles.portfolio}>
-              <div className={styles.sticky}>
-                
-                <div className={styles.description}>
-                    
-                    <p>
-                        Our
-                        <code className={styles.code}> Work</code>
-                    </p>
-                    
-                </div>
-                <div className={styles.description}>
-                    <Link href="/request">
-                        <p className={styles.code}>Submit a Request</p>
+            <div className={styles.main}>
+                <nav className={styles.nav}>
+                    <Link href='/' className={styles.logo}>
+                        <Image
+                        src='/logo2.svg'
+                        layout='fill'
+
+                        />
                     </Link>
+                    
+
+                    <div className={styles.navSelections}>
+                        <Link href='/services' className={styles.link}>
+                        <p className={inter.className}>
+                            Services
+                        </p>
+                        </Link>
+                    
+                        <Link href='/portfolio' className={styles.link}>
+                        <p className={inter.className}>
+                            Portfolio
+                        </p>
+                        </Link>
+                        <Link href='/about' className={styles.link}>
+                        <p className={inter.className}>
+                            About Us
+                        </p>
+                        </Link>
+                        <Link href='/request' className={styles.request}>
+                        <p className={inter.className}>
+                            Get Quote
+                        </p>
+                        </Link>
+                    </div>
+                </nav>
+            <div className={styles.wrapper}>
+                <h1 className={inter.className}>Check out some screengrabs from our recent 3D videos</h1>
+                <div className={styles.container}>
+                    <Image 
+                        src='/photos/cars.png'
+                        layout='fill'
+                        className={styles.screenshot}
+                        alt="cars"
+                    />
                 </div>
-            </div>
-            <div className={styles.container}>
-                <Image 
-                    src='/photos/cars.png'
-                    height="600"
-                    width="1000"
-                    className={styles.screenshot}
-                    alt="cars"
-                />
-                <Image 
-                    src='/photos/charging.png'
-                    height="600"
-                    width="1000"
-                    className={styles.screenshot}
-                    alt="charging"
-                />
+                <div className={styles.container}>
+                    <Image 
+                        src='/photos/charging.png'
+                        layout='fill'
+
+                        className={styles.screenshot}
+                        alt="charging"
+                    />
+                </div>
+                <div className={styles.container}>
+
                 <Image 
                     src='/photos/chips.png'
-                    height="600"
-                    width="1000"
+                    layout='fill'
+
                     className={styles.screenshot}
                     alt="chips"
                 />
+                </div>                
+                <div className={styles.container}>
                 <Image 
                     src='/photos/earth.png'
-                    height="600"
-                    width="1000"
+                    layout='fill'
+
                     className={styles.screenshot}
                     alt="earth"
                 />
+                </div>
+                <div className={styles.container}>
+
                 <Image 
                     src='/photos/home.png'
-                    height="600"
-                    width="1000"
+                    layout='fill'
+
                     className={styles.screenshot}
                     alt="home"
                 />
+                </div>                
+                <div className={styles.container}>
+
                 <Image 
                     src='/photos/internalcomponents.png'
-                    height="600"
-                    width="1000"
+                    layout='fill'
+
                     className={styles.screenshot}
                     alt="components"
                 />
+                </div>
+                <div className={styles.container}>
+
                 <Image 
                     src='/photos/keys.png'
-                    height="600"
-                    width="1000"
+                    layout='fill'
+
                     className={styles.screenshot}
                     alt="keys"
                 />
+                </div>
+                <div className={styles.container}>
+
                 <Image 
                     src='/photos/kitchen.png'
-                    height="600"
-                    width="1000"
+                    layout='fill'
+
                     className={styles.screenshot}
                     alt="kitchen"
                 />
+                </div>
+                <div className={styles.container}>
+
                 <Image 
                     src='/photos/mechanism.png'
-                    height="600"
-                    width="1000"
+                    layout='fill'
+
                     className={styles.screenshot}
                     alt="mechanism"
                 />
+                </div>
+                <div className={styles.container}>
+
                 <Image 
                     src='/photos/powershare.png'
-                    height="600"
-                    width="1000"
+                    layout='fill'
+
                     className={styles.screenshot}
                     alt="power"
                 />
+                </div>
+                <div className={styles.container}>
+
                 <Image 
                     src='/photos/space.png'
-                    height="600"
-                    width="1000"
+                    layout='fill'
+
                     className={styles.screenshot}
                     alt="space"
                 />
+                </div>
+                <div className={styles.container}>
                 <Image 
                     src='/photos/sportmodes.png'
-                    height="600"
-                    width="1000"
+                    layout='fill'
+
                     className={styles.screenshot}
                     alt="sports"
                 />
+                </div>
+                <div className={styles.container}>
+
                 <Image 
                     src='/photos/stepinside.png'
-                    height="600"
-                    width="1000"
+                    layout='fill'
+
                     className={styles.screenshot}
                     alt="step"
                 />
+                </div>
+                <div className={styles.container}>
+
                 <Image 
                     src='/photos/sunrise.png'
-                    height="600"
-                    width="1000"
+                    layout='fill'
+
                     className={styles.screenshot}
                     alt="sunrise"
                 />
-                {/* {images.map(i=>(
-                    
-                        <div key={i.id}>
-                            <Image 
-                            src={i.url}
-                            height="600"
-                            width="1000"
-                            className={styles.screenshot}
-                            alt="pic"
-
-                            />
-                            {console.log(i.url)}
-                            
-                        </div>
-                    
-                ))} */}
-                <div className={styles.sticky}>
-                    <Link href="/request" className={styles.description}>
-                        <p className={styles.code}>Submit a Request</p>
-                    </Link>
                 </div>
             </div>
+           </div>
             
-        </div>
-            
-      </div>
+      </>
     )
 }
 
 // Fetching data from the JSON file
-import fsPromises from 'fs/promises'
-import path from 'path'
-export async function getStaticProps() {
-  const filePath = path.join(process.cwd(), 'images.json');
-  const jsonData = await fsPromises.readFile(filePath);
-  const objectData = JSON.parse(jsonData);
+// import fsPromises from 'fs/promises'
+// import path from 'path'
+// export async function getStaticProps() {
+//   const filePath = path.join(process.cwd(), 'images.json');
+//   const jsonData = await fsPromises.readFile(filePath);
+//   const objectData = JSON.parse(jsonData);
 
-  return {
-    props: objectData
-  }
-}
+//   return {
+//     props: objectData
+//   }
+// }

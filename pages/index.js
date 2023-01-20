@@ -4,33 +4,6 @@ import Link from 'next/link'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 
-// import connectMongo from '../utils/connectMongo';
-// import Request from '../models/newRequest';
-
-// export const getServerSideProps = async () => {
-//   try {
-//     console.log('CONNECTING TO MONGO');
-//     await connectMongo();
-//     console.log('CONNECTED TO MONGO');
-
-//     console.log('FETCHING DOCUMENTS');
-//     const requests = await Request.find();
-//     console.log('FETCHED DOCUMENTS');
-
-//     return {
-//       props: {
-//         requests: JSON.parse(JSON.stringify(requests)),
-//       },
-//     };
-//   } catch (error) {
-//     console.log(error);
-//     return {
-//       notFound: true,
-//     };
-//   }
-// };
-
-
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home({ requests }) {
@@ -44,7 +17,42 @@ export default function Home({ requests }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/6.svg" />
       </Head>
-      <main className={styles.main}>
+      <div className={styles.main}>
+        <nav className={styles.nav}>
+          <div className={styles.logo}>
+            <Image
+              src='/logo2.svg'
+              layout='fill'
+              objectFit='contain'
+
+            />
+          </div>
+          
+
+          <div className={styles.navSelections}>
+            <Link href='/services' className={styles.link}>
+              <p className={inter.className}>
+                Services
+              </p>
+            </Link>
+          
+            <Link href='/portfolio' className={styles.link}>
+              <p className={inter.className}>
+                Portfolio
+              </p>
+            </Link>
+            <Link href='/about' className={styles.link}>
+              <p className={inter.className}>
+                About
+              </p>
+            </Link>
+            <Link href='/getquote' className={styles.request}>
+              <p className={inter.className}>
+                Get Quote
+              </p>
+            </Link>
+          </div>
+        </nav>
       {/* <Image
             className={styles.background}
             src="/photos/space.png"
@@ -53,10 +61,62 @@ export default function Home({ requests }) {
             priority
             objectFit="cover"
         /> */}
-    
-        <div className={styles.description}>
-       
+        <div className={styles.wrapper}>
+          <div className={styles.container}>
+            <Image
+              src='/figma/worldclass.png'
+              className={styles.screenshot}
+              layout='fill'
+              objectFit='contain'
+            />
+          </div>
+          <div className={styles.container}>
+            <Image
+              src='/figma/unique.png'
+              className={styles.screenshot}
+              layout='fill'
+              objectFit='contain'
 
+            />
+          </div>
+          <div className={styles.container}>
+            <Image
+              src='/figma/vivid.png'
+              className={styles.screenshot}
+              layout='fill'
+              objectFit='contain'
+
+            />
+          </div>
+          <div className={styles.container}>
+            <Image
+              src='/figma/dimension.png'
+              className={styles.screenshot}
+              layout='fill'
+              objectFit='contain'
+
+            />
+          </div>
+          <div className={styles.container}>
+            <Image
+              src='/figma/collab2.png'
+              className={styles.screenshot}
+              layout='fill'
+              objectFit='contain'
+
+            />
+          </div>
+
+       
+          {/* <Image
+          src='/figma/collab.png'
+          className={styles.container}
+          layout='fill'
+        /> */}
+
+        </div>
+{/*     
+        <div className={styles.description}>
           <p>
             Welcome to&nbsp;
             <code className={styles.code}>Six Animations</code>
@@ -126,8 +186,8 @@ export default function Home({ requests }) {
               Submit a 3D animation request to Six Animations here.
             </p>
           </Link>
-        </div>
-      </main>
+        </div> */}
+      </div>
       {/* <div>
         {requests.map((request) => (
           <h2 key={request._id}>{request.name}</h2>

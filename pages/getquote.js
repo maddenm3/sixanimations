@@ -30,15 +30,15 @@ export default function Request(){
     return(
         <>
             <Head>
-                <title>Submit a Request</title>
-                <meta name="description" content="Submit a 3D animation request here." />
+                <title>Get a Quote</title>
+                <meta name="description" content="Submit a 3D animation request here and get a quote within 24 hours." />
 
             </Head>
             <main className={styles.page}>
                 <div className={styles.description}>
                     <p>
-                        Submit a
-                        <code className={styles.code}> Request</code>
+                        Get a 
+                        <code className={styles.code}> Quote</code>
                     </p>
                 </div>
                 <div className={styles.pagemain}>
