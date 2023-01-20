@@ -53,11 +53,11 @@
   border: 3px solid black;
   padding: 5px;
   font-family: 'Inter';
-font-style: normal;
-font-weight: 900;
-font-size: 16px;
-line-height: 39px;
-text-align: center;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 39px;
+  text-align: center;
 }
 
 .link:hover{
@@ -406,6 +406,10 @@ text-align: center;
 
   .logo{
     display: none;
+  }
+
+  .link, .request{
+    font-size: 10px;
   }
 
   .icon{
