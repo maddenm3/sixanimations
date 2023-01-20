@@ -11,7 +11,9 @@ export default function Services(){
     return(
         <>
             <Head>
-                <title>Services</title>
+                <title>Success</title>
+                <link rel="icon" href="/icon3.svg" />
+
             </Head>
             <main className={styles.page}>
                 <h1 className={inter.className}>Submission Successful!</h1>

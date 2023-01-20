@@ -15,7 +15,7 @@ export default function Home({ requests }) {
         <title>Six Animations | Movie-quality 3D animations</title>
         <meta name="description" content="Six Animations is a 3D animation studio specializing in 3D animated videos and 3D animated photos for business use." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/6.svg" />
+        <link rel="icon" href="/icon3.svg" />
       </Head>
       <div className={styles.main}>
         <nav className={styles.nav}>
@@ -28,7 +28,6 @@ export default function Home({ requests }) {
             />
           </div>
           
-
           <div className={styles.navSelections}>      
             <Link href='/portfolio' className={styles.link}>
               <p className={inter.className}>

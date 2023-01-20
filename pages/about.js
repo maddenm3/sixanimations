@@ -21,6 +21,7 @@ export default function About(){
             </script> */}
             <title>About Us</title>
             <meta name="description" content="Six Animations is a professional CGI and 3D animated studio based in Shenzhen." />
+            <link rel="icon" href="/icon3.svg" />
 
         </Head>
         <div className={styles.main}>

@@ -13,6 +13,7 @@ export default function Request(){
             <Head>
                 <title>Get a Quote</title>
                 <meta name="description" content="Submit a 3D animation request here and get a quote within 24 hours." />
+                <link rel="icon" href="/icon3.svg" />
 
             </Head>
             <div className={styles.main}>

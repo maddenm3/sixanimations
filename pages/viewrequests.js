@@ -36,6 +36,8 @@ export default function viewrequests({requests}){
         <div>
             <Head>
                 <title>Requests</title>
+                <link rel="icon" href="/icon3.svg" />
+
             </Head>
             <div className={styles.portfolio}>
             <div className={styles.sticky}>

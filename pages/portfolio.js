@@ -10,8 +10,9 @@ export default function portfolio(){
     return(
         <>
             <Head>
-                <title>Our Work</title>
+                <title>Portfolio</title>
                 <meta name="description" content="View a snapshot of our 3D videos and photos here." />
+                <link rel="icon" href="/icon3.svg" />
 
             </Head>
             <div className={styles.main}>
