@@ -7,7 +7,7 @@ import { Inter } from '@next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 
-export default function Services(){
+export default function Success(){
     return(
         <>
             <Head>
