@@ -23,51 +23,51 @@ export default function About(){
             <meta name="description" content="Six Animations is a professional CGI and 3D animated studio based in Shenzhen." />
 
         </Head>
-        <main className={styles.page}>
+        <div className={styles.main}>
+                <nav className={styles.nav}>
+                    <Link href='/' className={styles.logo}>
+                        <Image
+                        src='/logo2.svg'
+                        layout='fill'
 
-            <div className={styles.description}>
-                <p>
-                    About
-                    <code className={styles.code}> Six Studios</code>
-                </p>
-                
-            </div>
-            <div className={styles.pagemain}>
+                        />
+                    </Link>
+                    
 
-            <div className={styles.pagecard}>
-                
-                <Link href="/portfolio" className={styles.pagecard}>
-                    <Image
-                        className={styles.logo}
-                        src="/video2.jpg"
-                        alt="video"
-                        layout="fill"
-                        priority
-                        objectFit="cover"
-                    />
-
-                </Link>
-                </div>
-            <div className={styles.pagecard}>
+                    <div className={styles.navSelections}>                  
+                        <Link href='/portfolio' className={styles.link}>
+                        <p className={inter.className}>
+                            Portfolio
+                        </p>
+                        </Link>
+                        <Link href='/about' className={styles.link}>
+                        <p className={inter.className}>
+                            About
+                        </p>
+                        </Link>
+                        <Link href='/getquote' className={styles.request}>
+                        <p className={inter.className}>
+                            Get Quote
+                        </p>
+                        </Link>
+                    </div>
+                </nav>
                 <div>
-                    <h1 className={inter.className}>Our Team</h1>
-                </div>
-                <br></br>
-                    <p>We are a team of 3D and CGI animators based in Shenzhen, China. 
-                        We focus primarily on product promotion videos, advanced explainer videos, 
-                        and high quality product photos. If you are in need of 3D support for 
-                        your business, please submit a request.</p>
+                    
+                    <div className={styles.pagecard}>
                         <div>
-                            <br></br>
-                            <br></br>
-                <Link href="/request" className={styles.request}><b>Submit a Request</b></Link>
-            </div>
-                </div>
-                
-            </div>
-            
-        
-    </main>
+                            <h1 className={inter.className}>Our Team</h1>
+                        </div>
+                        <br></br>
+                            <p className={inter.className}>We are a team of 3D and CGI animators based in Shenzhen, China. 
+                                We focus primarily on product promotion videos, advanced explainer videos, 
+                                and high quality product photos. We will help 
+                                produce world-class animations to bring your brand to life. 
+                                Click "Get a Quote" and let us know about your project.</p>
+                            
+                    </div>
+            </div>        
+    </div>
     </>
     )
 }

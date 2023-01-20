@@ -1,31 +1,12 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import Head from 'next/head'
+import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 
+const inter = Inter({ subsets: ['latin'] })
 
 export default function Request(){
-
-    // const handleOnSubmit = async(e) => {
-    //     e.preventDefault();
-      
-    //     // const formData = {};
-      
-    //     // Array.from(e.currentTarget.elements).forEach(field => {
-    //     //   if ( !field.name ) return;
-    //     //   formData[field.name] = field.value;
-    //     // });
-      
-    //     await fetch('/api/request', {
-    //       method: 'POST',
-    //       body: JSON.stringify({
-    //         name: e.target.name,
-
-    //       })
-    //     })
-
-    //   }
-
 
     return(
         <>
@@ -34,31 +15,54 @@ export default function Request(){
                 <meta name="description" content="Submit a 3D animation request here and get a quote within 24 hours." />
 
             </Head>
-            <main className={styles.page}>
-                <div className={styles.description}>
-                    <p>
-                        Get a 
-                        <code className={styles.code}> Quote</code>
-                    </p>
-                </div>
-                <div className={styles.pagemain}>
+            <div className={styles.main}>
+                <nav className={styles.nav}>
+                    <Link href='/' className={styles.logo}>
+                        <Image
+                        src='/logo2.svg'
+                        layout='fill'
+
+                        />
+                    </Link>
+                    
+
+                    <div className={styles.navSelections}>
+                        <Link href='/portfolio' className={styles.link}>
+                        <p className={inter.className}>
+                            Portfolio
+                        </p>
+                        </Link>
+                        <Link href='/about' className={styles.link}>
+                        <p className={inter.className}>
+                            About
+                        </p>
+                        </Link>
+                        <Link href='/getquote' className={styles.request}>
+                        <p className={inter.className}>
+                            Get Quote
+                        </p>
+                        </Link>
+                    </div>
+                </nav>
+                <div className={styles.wrapper}>
+                    <h1 className={inter.className}>Get a Quote</h1>
                     <form action="/api/request" method="post" className={styles.form}>
-                        <label for="name">Name:</label>
+                        <label className={inter.className} for="name">Name:</label>
                         <input type="text" id="name" name="name"/>
-                        <label for="email">Email:</label>
+                        <label className={inter.className} for="email">Email:</label>
                         <input type="text" id="email" name="email" />
-                        <label for="country">Country:</label>
+                        <label className={inter.className} for="country">Country:</label>
                         <input type="text" id="country" name="country" />
-                        <label for="business">Business Name:</label>
+                        <label className={inter.className} for="business">Business Name:</label>
                         <input type="text" id="business" name="business" />
-                        <label for="budget">Budget:</label>
+                        <label className={inter.className} for="budget">Budget:</label>
                         <input type="text" id="budget" name="budget" />
-                        <label for="message">Tell us about your project:</label>
+                        <label className={inter.className} for="message">Tell us about your project:</label>
                         <textarea name="message" cols="40" rows="10"></textarea>                        
-                        <button type="submit">Submit</button>
+                        <button className={inter.className} type="submit">Submit</button>
                         </form>
                     </div>
-            </main>
+            </div>
 
         </>
     )

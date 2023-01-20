@@ -29,13 +29,7 @@ export default function Home({ requests }) {
           </div>
           
 
-          <div className={styles.navSelections}>
-            <Link href='/services' className={styles.link}>
-              <p className={inter.className}>
-                Services
-              </p>
-            </Link>
-          
+          <div className={styles.navSelections}>      
             <Link href='/portfolio' className={styles.link}>
               <p className={inter.className}>
                 Portfolio

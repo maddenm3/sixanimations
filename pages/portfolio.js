@@ -25,13 +25,7 @@ export default function portfolio(){
                     </Link>
                     
 
-                    <div className={styles.navSelections}>
-                        <Link href='/services' className={styles.link}>
-                        <p className={inter.className}>
-                            Services
-                        </p>
-                        </Link>
-                    
+                    <div className={styles.navSelections}>                  
                         <Link href='/portfolio' className={styles.link}>
                         <p className={inter.className}>
                             Portfolio
@@ -39,10 +33,10 @@ export default function portfolio(){
                         </Link>
                         <Link href='/about' className={styles.link}>
                         <p className={inter.className}>
-                            About Us
+                            About
                         </p>
                         </Link>
-                        <Link href='/request' className={styles.request}>
+                        <Link href='/getquote' className={styles.request}>
                         <p className={inter.className}>
                             Get Quote
                         </p>
