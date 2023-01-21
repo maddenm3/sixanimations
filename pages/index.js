@@ -53,14 +53,7 @@ export default function Home({ requests }) {
             </Link>
           </div>
         </nav>
-      {/* <Image
-            className={styles.background}
-            src="/photos/space.png"
-            alt="medium"
-            layout="fill"
-            priority
-            objectFit="cover"
-        /> */}
+
         <div className={styles.wrapper}>
           <div className={styles.container}>
             <Image
@@ -106,93 +99,16 @@ export default function Home({ requests }) {
 
             />
           </div>
-
-       
-          {/* <Image
-          src='/figma/collab.png'
-          className={styles.container}
-          layout='fill'
-        /> */}
-
-        </div>
-{/*     
-        <div className={styles.description}>
-          <p>
-            Welcome to&nbsp;
-            <code className={styles.code}>Six Animations</code>
-          </p>
-          
+         
         </div>
 
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/Comp3.svg"
-            alt="Next.js Logo"
-            width={980}
-            height={300}
-            priority
-          />
+        <div className={styles.footer}>
+          <h1>Footer</h1>
         </div>
 
-        <div className={styles.grid}>
-          <Link
-            href="/services"
-            className={styles.card}
-          >
-            <h2 className={inter.className}>
-              Services
-            </h2>
-            <p className={inter.className}>
-              We offer 3D animation video and 3D photo services.
-            </p>
-          </Link>
 
-          <Link
-            href="/portfolio"
-            className={styles.card}
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Our Work
-            </h2>
-            <p className={inter.className}>
-              Check out our previous 3D and CGI work here.
-            </p>
-          </Link>
-
-          <Link
-            href="/about"
-            className={styles.card}
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              About
-            </h2>
-            <p className={inter.className}>
-              Learn about the Six Animations team.
-            </p>
-          </Link>
-
-          <Link
-            href="/request"
-            className={styles.card}
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Request
-            </h2>
-            <p className={inter.className}>
-              Submit a 3D animation request to Six Animations here.
-            </p>
-          </Link>
-        </div> */}
       </div>
-      {/* <div>
-        {requests.map((request) => (
-          <h2 key={request._id}>{request.name}</h2>
-        ))}
-      </div> */}
+
     </>
   )
 }

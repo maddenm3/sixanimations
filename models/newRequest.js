@@ -3,27 +3,27 @@ import { Schema, model, models } from 'mongoose'
 const requestSchema = new Schema({
     name: {
         type: String,
-        required: true
+        required: false
     },
     email: {
         type: String,
-        required: true
+        required: false
     },
     country: {
         type: String,
-        required: true
+        required: false
     },
     business: {
         type: String,
-        required: true
+        required: false
     },
     budget: {
         type: String,
-        required: true
+        required: false
     },
     message: {
         type: String,
-        required: true
+        required: false
     }
 })
 

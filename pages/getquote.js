@@ -56,18 +56,18 @@ export default function Request(){
                 <div className={styles.wrapper}>
                     <h1 className={inter.className}>Get a Quote</h1>
                     <form action="/api/request" method="post" className={styles.form}>
-                        <label className={inter.className} for="name">Name:</label>
-                        <input type="text" id="name" name="name"/>
-                        <label className={inter.className} for="email">Email:</label>
-                        <input type="text" id="email" name="email" />
-                        <label className={inter.className} for="country">Country:</label>
-                        <input type="text" id="country" name="country" />
-                        <label className={inter.className} for="business">Business Name:</label>
-                        <input type="text" id="business" name="business" />
-                        <label className={inter.className} for="budget">Budget:</label>
-                        <input type="text" id="budget" name="budget" />
-                        <label className={inter.className} for="message">Tell us about your project:</label>
-                        <textarea name="message" cols="40" rows="10"></textarea>                        
+                        <label className={inter.className} htmlFor="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Your name"/>
+                        <label className={inter.className} htmlFor="email">Email:</label>
+                        <input type="text" id="email" name="email" placeholder="You@You.com"/>
+                        <label className={inter.className} htmlFor="country">Country:</label>
+                        <input type="text" id="country" name="country" placeholder="Where are you located?"/>
+                        <label className={inter.className} htmlFor="business">Business Name:</label>
+                        <input type="text" id="business" name="business" placeholder="Your business name and website"/>
+                        <label className={inter.className} htmlFor="budget">Budget:</label>
+                        <input type="text" id="budget" name="budget" placeholder="What's your budget for this project?"/>
+                        <label className={inter.className} htmlFor="message">Tell us about your project:</label>
+                        <textarea name="message" className={inter.className} cols="40" rows="10" placeholder="Please give us as many details as possible."></textarea>                        
                         <button className={inter.className} type="submit">Submit</button>
                         </form>
                     </div>
