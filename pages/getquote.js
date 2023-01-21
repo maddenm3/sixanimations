@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { useState } from 'react'
 import Head from 'next/head'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
@@ -7,6 +8,13 @@ import styles from '@/styles/Home.module.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Request(){
+
+    const [message, setMessage] = useState(null)
+
+    const HandleClick = () => {
+            setMessage("Submitted! We will contact you within 24 hours to go over your project.")
+        
+    }
 
     return(
         <>
@@ -68,8 +76,11 @@ export default function Request(){
                         <input type="text" id="budget" name="budget" placeholder="What's your budget for this project?"/>
                         <label className={inter.className} htmlFor="message">Tell us about your project:</label>
                         <textarea name="message" className={inter.className} cols="40" rows="10" placeholder="Please give us as many details as possible."></textarea>                        
-                        <button className={inter.className} type="submit">Submit</button>
+                        <button className={inter.className} onClick={HandleClick} type="submit">Submit</button>
                         </form>
+                        <div className={styles.message}>
+                            {message ? <p className={inter.className}>{message}</p> : null}
+                        </div>
                     </div>
             </div>
 
