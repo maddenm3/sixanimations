@@ -15,7 +15,8 @@ export default async function addRequest(req, res) {
 
     const request = await Request.create(req.body);
     console.log('CREATED DOCUMENT', request);
-    res.status(200).json({ request })
+    res.status(200).json("success!")
+    res.redirect('/success')
 
 
   } catch (error) {
